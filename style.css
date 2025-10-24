@@ -1002,3 +1002,25 @@ body {
     }
     
 }
+
+/* CENTRAGE VERTICAL DES SECTIONS */
+    .section {
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: space-around !important;
+        align-self: center !important;
+        min-height: 19cm !important;
+    }
+    
+    /* 📄 FORCER CHAQUE SECTION SUR UNE NOUVELLE PAGE */
+    .section {
+        page-break-before: always !important;
+        page-break-after: always !important;
+        page-break-inside: avoid !important;
+    }
+    
+    /* 🟢 EXCEPTION : PREMIÈRE SECTION (après le hero) */
+    .section:first-of-type {
+        page-break-before: avoid !important;
+    }
+    

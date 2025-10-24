@@ -62,6 +62,7 @@ body {
         url(./images/background_vegetale.jpg)
         center/cover;
     background-attachment: fixed;
+    overflow: hidden;
 }
 
 .hero-overlay {
@@ -216,6 +217,95 @@ body {
 
 .section-titre.light {
     color: var(--or);
+}
+
+/* ========================================
+   💎 BOUTON CV PDF (sous section Profil)
+======================================== */
+
+.cv-download-btn-profil {
+    display: inline-block;
+    margin: var(--spacing-md) auto 0;
+    text-decoration: none;
+    transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    filter: drop-shadow(0 4px 15px rgba(0, 0, 0, 0.3));
+}
+
+/* Centrer le bouton */
+.section-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cv-download-btn-profil:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(0 8px 25px rgba(201, 169, 97, 0.6));
+}
+
+.diamond-pdf-profil {
+    width: 90px;
+    height: 90px;
+    background: linear-gradient(135deg, var(--vert-profond) 0%, var(--vert-moyen) 100%);
+    border: 3px solid var(--or);
+    transform: rotate(45deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-shadow: 
+        0 4px 20px rgba(0, 0, 0, 0.4),
+        inset 0 0 30px rgba(201, 169, 97, 0.15);
+    transition: all 0.4s ease;
+}
+
+.cv-download-btn-profil:hover .diamond-pdf-profil {
+    background: linear-gradient(135deg, var(--vert-moyen) 0%, var(--vert-profond) 100%);
+    border-color: var(--beige-clair);
+    box-shadow: 
+        0 8px 35px rgba(201, 169, 97, 0.6),
+        inset 0 0 40px rgba(201, 169, 97, 0.3);
+}
+
+/* Animation pulse */
+@keyframes pulse-pdf-profil {
+    0%, 100% {
+        box-shadow: 
+            0 4px 20px rgba(0, 0, 0, 0.4),
+            inset 0 0 30px rgba(201, 169, 97, 0.15);
+    }
+    50% {
+        box-shadow: 
+            0 6px 30px rgba(201, 169, 97, 0.4),
+            inset 0 0 40px rgba(201, 169, 97, 0.25);
+    }
+}
+
+.diamond-pdf-profil {
+    animation: pulse-pdf-profil 3s ease-in-out infinite;
+}
+
+.pdf-text-profil {
+    transform: rotate(-45deg);
+    color: var(--or);
+    font-family: var(--font-titre);
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.3;
+    letter-spacing: 1px;
+    text-shadow: 
+        0 2px 6px rgba(0, 0, 0, 0.6),
+        0 0 15px rgba(201, 169, 97, 0.4);
+    transition: all 0.3s ease;
+}
+
+.cv-download-btn-profil:hover .pdf-text-profil {
+    color: var(--beige-clair);
+    text-shadow: 
+        0 3px 8px rgba(0, 0, 0, 0.8),
+        0 0 25px var(--or);
+    transform: rotate(-45deg) scale(1.05);
 }
 
 /* ========================================

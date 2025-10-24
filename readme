@@ -1,0 +1,218 @@
+# 💼 Portfolio - Valentin Duteil
+
+> CV en ligne élégant et responsive d'un développeur web en formation
+
+## 📸 Aperçu
+
+![Aperçu du portfolio](./images/screenshot_1.png)
+![Aperçu du portfolio](./images/screenshot_2.png)
+![Aperçu du portfolio](./images/screenshot_3.png)
+![Aperçu du portfolio](./images/screenshot_4.png)
+<!-- Pensez à ajouter un screenshot ! -->
+
+---
+
+## 🎯 Objectif du projet
+
+Portfolio professionnel créé dans le cadre de ma formation de **Développeur Web** chez [O'Clock](https://oclock.io/).
+
+**Pourquoi ce design ?**
+- ✨ Inspiration **Art Déco / Nature élégante**
+- 🎨 Reflet de ma reconversion depuis l'artisanat (céramique)
+- 💎 Accent mis sur la **lisibilité** et l'**élégance**
+
+---
+
+## 🛠️ Technologies utilisées
+
+| Technologie | Usage |
+|-------------|-------|
+| **HTML5** | Structure sémantique |
+| **CSS3** | Styles, animations, responsive |
+| **Git** | Versioning |
+| **GitHub Pages** | Hébergement |
+
+### Concepts CSS avancés mis en pratique :
+- ✅ Variables CSS (`--custom-properties`)
+- ✅ Flexbox & Grid
+- ✅ Animations avec `@keyframes`
+- ✅ Pseudo-éléments (`:before`, `:after`)
+- ✅ Positionnement sticky
+- ✅ Gestion du z-index
+
+---
+
+## 📂 Structure du projet
+portfolio/
+│
+├── index.html              # Page principale
+├── style.css               # Styles globaux
+|
+│
+├── images/                 # Ressources visuelles
+│   ├── background_vegetale.jpg
+│   └── portrait.jpg
+│
+├── cv-valentin-duteil.pdf  # CV téléchargeable
+│
+└── README.md               # Ce fichier
+
+---
+
+## 🚀 Fonctionnalités
+
+### ✨ Actuelles
+- [x] Design responsive (mobile-first)
+- [x] Navigation sticky avec smooth scroll
+- [x] Section Hero avec légère animation
+- [x] Bouton de téléchargement CV (format losange animé)
+- [x] Sections : Profil, Compétences, Projets, Formation, Contact
+- [x] Accessibilité (aria-labels, contraste)
+
+### 🔮 Améliorations futures
+- [ ] Mode sombre (dark mode)
+- [ ] Formulaire de contact fonctionnel
+- [ ] Animations au scroll (Intersection Observer)
+- [ ] Section blog/articles
+- [ ] Version multilingue (FR/EN)
+- [ ] Media Queries pour une version imprimable
+
+---
+
+## 💻 Installation locale
+
+### Prérequis
+- Un navigateur moderne
+- (Optionnel) Un serveur local (Live Server sur VS Code)
+
+### Étapes
+```bash
+# 1. Cloner le dépôt
+git clone https://github.com/ValentinDuteil/ValentinDuteil.github.io.git
+
+# 2. Se déplacer dans le dossier
+cd ValentinDuteil.github.io
+
+# 3. Ouvrir index.html
+# - Double-clic sur le fichier
+# - Ou avec Live Server (VS Code)
+
+🎨 Palette de couleurs
+
+
+
+Couleur
+Hex
+Usage
+
+
+
+Vert profond
+#1a3024
+Fond hero, textes foncés
+
+
+Vert moyen
+#2d4a3e
+Sections sombres
+
+
+Beige clair
+#e8d5c4
+Sections claires
+
+
+Or
+#c9a961
+Accents, boutons
+
+
+Blanc cassé
+#f5f3f0
+Textes sur fond sombre
+
+
+
+📱 Responsive Design
+
+
+
+Breakpoint
+Taille écran
+Adaptations
+
+
+
+Mobile
+< 768px
+Navigation burger, colonnes empilées
+
+
+Tablette
+768px - 1024px
+Grilles à 2 colonnes
+
+
+Desktop
+> 1024px
+Layout complet
+
+```
+---
+## 🧪 Tests
+
+### Navigateurs testés
+
+- ✅ Chrome 120+
+- ✅ Firefox 121+
+- ✅ Edge 120+
+
+## 📚 Ce que j'ai appris
+
+### Compétences techniques
+```
+/* Gestion du contexte d'empilement */
+.element {
+    z-index: 10;
+    isolation: isolate; /* Nouveau contexte */
+}
+
+/* Animations CSS fluides */
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.6; }
+}
+
+```
+### Bonnes pratiques
+
+- ✅ Organisation du code CSS par sections
+- ✅ Nommage BEM pour les classes
+- ✅ Mobile-first approach
+- ✅ Optimisation des images
+- ✅ Sémantique HTML5
+
+---
+
+🤝 Contribution
+Ce portfolio est personnel, mais les suggestions sont bienvenues !
+Si vous voyez un bug ou une amélioration possible :
+
+Ouvrez une issue
+Ou proposez une pull request
+
+
+- 📬 Contact
+
+- 🌐 Site web : valentinduteil.github.io
+- 💼 LinkedIn : linkedin.com/in/valentin-duteil
+- 📧 Email : votre.email@exemple.com
+- 🐙 GitHub : @ValentinDuteil
+
+
+🙏 Crédits
+
+- O'Clock pour la formation
+- Google Fonts pour Playfair Display et Lato
+- Unsplash pour l'image de fond
+- SVGPathEditor qui a été ma plus belle surprise sur ce projet et qui permet de convertir les balise `<patgh>` en SVG téléchargeable !

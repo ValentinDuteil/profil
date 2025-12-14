@@ -214,4 +214,4 @@ Ou proposez une pull request
 - O'Clock pour la formation
 - Google Fonts pour Playfair Display et Lato
 - Unsplash pour l'image de fond
-- SVGPathEditor qui a été ma plus belle surprise sur ce projet et qui permet de convertir les balise `<patgh>` en SVG téléchargeable !
+- SVGPathEditor qui a été ma plus belle surprise sur ce projet et qui permet de convertir les balise `<path>` en SVG téléchargeable !
